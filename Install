@@ -192,7 +192,7 @@ fi
 	echo "Creating unprivileged user to run the server = \"qtss\"."
     if [ $INSTALL_OS = "Linux" ]; then
         /usr/sbin/groupadd qtss > /dev/null 2>&1
-        /usr/sbin/useradd -M qtss > /dev/null 2>&1
+        /usr/sbin/useradd -m qtss > /dev/null 2>&1
     else
         /usr/sbin/groupadd qtss > /dev/null 2>&1
         /usr/sbin/useradd qtss > /dev/null 2>&1
